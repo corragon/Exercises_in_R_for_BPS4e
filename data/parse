@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+opendir(DIR, $path);
+@files = grep { /\.dat$/ } readdir(DIR);
+closedir(DIR);
+print "Files: {@files}";
